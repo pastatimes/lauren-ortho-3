@@ -302,7 +302,7 @@ img {
 }
 
 .klachten-lijst li::before {
-  content: "—";
+  content: "";
   position: absolute;
   left: 0;
   color: var(--olive);
@@ -564,7 +564,7 @@ img {
 }
 
 .ontvangt-lijst li::before {
-  content: "—";
+  content: "";
   position: absolute;
   left: 0;
   color: var(--olive);
