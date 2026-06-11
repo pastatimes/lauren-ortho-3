@@ -1,10 +1,10 @@
 :root {
-  --ivory:     #F4F1EC;
-  --sand:      #E8E2D8;
-  --olive:     #7A8768;
-  --moss:      #4F6A52;
-  --botanical: #2E3D34;
-  --charcoal:  #2B2B2B;
+  --ivory:     #F4EFE3;
+  --sand:      #EAE3D6;
+  --olive:     #8BAB82;
+  --moss:      #556847;
+  --botanical: #232C1C;
+  --charcoal:  #222222;
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'DM Sans', system-ui, sans-serif;
@@ -508,12 +508,12 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.8);
+  filter: saturate(0.75) sepia(0.1);
   transition: filter 0.4s, transform 0.4s;
 }
 
 .fase-img:hover img {
-  filter: saturate(1);
+  filter: saturate(1) sepia(0);
   transform: scale(1.03);
 }
 
