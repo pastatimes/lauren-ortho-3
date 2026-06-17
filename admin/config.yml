@@ -1,0 +1,115 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "."
+public_folder: "."
+
+locale: nl
+
+collections:
+  - name: "site"
+    label: "Website"
+    files:
+      - name: "content"
+        label: "Alle teksten"
+        file: "content.json"
+        format: json
+        fields:
+          - label: "Hero (bovenste blok)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Label boven titel", name: "eyebrow", widget: "string" }
+              - { label: "Titel regel 1", name: "titel1", widget: "string" }
+              - { label: "Titel regel 2", name: "titel2", widget: "string" }
+              - { label: "Ondertitel", name: "subtitel", widget: "text" }
+
+          - label: "Herken jij dit? (klachtenlijst)"
+            name: "herkenning"
+            widget: "object"
+            fields:
+              - { label: "Introtekst", name: "lead", widget: "text" }
+              - label: "Klachten"
+                name: "klachten"
+                widget: "list"
+                field: { label: "Klacht", name: "item", widget: "string" }
+              - { label: "Afsluitende zin", name: "afsluiting", widget: "string" }
+
+          - label: "Eerlijke quote sectie"
+            name: "quote_eerlijk"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Tussenregel", name: "source", widget: "string" }
+              - { label: "Tekst eronder", name: "tekst", widget: "text" }
+
+          - { label: "Groene blok tekst", name: "quote_groen", widget: "text" }
+
+          - { label: "Quote (darmen/hormonen)", name: "quote_darmen", widget: "text" }
+
+          - label: "Uitleg sectie"
+            name: "uitleg"
+            widget: "object"
+            fields:
+              - { label: "Alinea 1", name: "tekst1", widget: "text" }
+              - { label: "Alinea 2", name: "tekst2", widget: "text" }
+
+          - label: "Wil je... (lijst)"
+            name: "wilje"
+            widget: "list"
+            field: { label: "Punt", name: "item", widget: "string" }
+
+          - label: "4 Fases"
+            name: "fases"
+            widget: "object"
+            fields:
+              - label: "Fase 1"
+                name: "fase1"
+                widget: "object"
+                fields:
+                  - { label: "Titel", name: "titel", widget: "string" }
+                  - { label: "Tekst", name: "tekst", widget: "text" }
+              - label: "Fase 2"
+                name: "fase2"
+                widget: "object"
+                fields:
+                  - { label: "Titel", name: "titel", widget: "string" }
+                  - { label: "Tekst", name: "tekst", widget: "text" }
+              - label: "Fase 3"
+                name: "fase3"
+                widget: "object"
+                fields:
+                  - { label: "Titel", name: "titel", widget: "string" }
+                  - { label: "Tekst", name: "tekst", widget: "text" }
+              - label: "Fase 4"
+                name: "fase4"
+                widget: "object"
+                fields:
+                  - { label: "Titel", name: "titel", widget: "string" }
+                  - { label: "Tekst", name: "tekst", widget: "text" }
+
+          - label: "Wat je ontvangt (lijst)"
+            name: "ontvangt"
+            widget: "list"
+            field: { label: "Onderdeel", name: "item", widget: "string" }
+
+          - label: "Investering"
+            name: "investering"
+            widget: "object"
+            fields:
+              - { label: "Prijs (bijv. € 1.250)", name: "prijs", widget: "string" }
+              - { label: "Tekst over termijnen", name: "termijnen", widget: "text" }
+
+          - label: "Je bent klaar als je... (lijst)"
+            name: "klaar"
+            widget: "list"
+            field: { label: "Punt", name: "item", widget: "string" }
+
+          - label: "Kennismaken (onderaan)"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+              - { label: "E-mailadres", name: "email", widget: "string" }

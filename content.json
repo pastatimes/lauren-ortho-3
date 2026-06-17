@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "eyebrow": "Lauren Hendriks · Darmtherapeut",
+    "titel1": "Darmtherapie",
+    "titel2": "Traject",
+    "subtitel": "In 4 maanden naar gezonde spijsvertering, hormonen en een energiek lichaam"
+  },
+  "herkenning": {
+    "lead": "Je merkt dat je lichaam niet meer meewerkt zoals je wilt.",
+    "klachten": [
+      "Onregelmatige stoelgang, buikpijn, spijsverteringsproblemen, PDS of voedselintoleranties",
+      "Een vol gevoel na het eten, boeren of winderigheid",
+      "Hormonale disbalans PMS, cyclusproblemen, stemmingswisselingen",
+      "Vermoeidheid, onaangenamheid of brain fog",
+      "Huidproblemen die blijven terugkomen",
+      "Cravings, schommelende energie of stress in je lijf"
+    ],
+    "afsluiting": "Je bent klaar om je klachten om te draaien."
+  },
+  "quote_eerlijk": {
+    "quote": "Heel eerlijk, het nog even wat langer aankijken of nog meer losse supplementen nemen gaat het verschil niet maken...",
+    "source": "You've been there, done that.",
+    "tekst": "Je hebt al genoeg informatie en therapieoplossingen geprobeerd. Allerlei supplementen uitgeprobeerd. En elke keer lijkt het voor korte tijd te werken maar dan val je weer terug in je patronen en voel je een verlies van vertrouwen in je eigen lichaam."
+  },
+  "quote_groen": "Wat je wel gaat helpen, is je systeem als geheel op een duurzame manier herstellen in plaats van losse klachten oplossen.",
+  "quote_darmen": "Je darmen, hormonen en energie werken niet los van elkaar. Dus je oplossing kan dat ook niet doen.",
+  "uitleg": {
+    "tekst1": "Want als je bijgestoorde systemen hebt, een ongestoorde omgeving wil creëren voor jouw lichaam om te helen, dan moet je de puzzel als geheel oplossen. Niet stukje voor stukje, maar structureel en van binnenuit.",
+    "tekst2": "Zodat je niet langer vastzit in tijdelijkheid, maar eindelijk weet hoe je de regie terugpakt over je eigen lichaam."
+  },
+  "wilje": [
+    "Eindelijk afscheid nemen van je buikklachten opgeblazen buik, diarree, verstopping of constipatie",
+    "De onderliggende oorzaak achterhalen en in kaart brengen",
+    "Leren omgaan met je cyclus zodat je lichaam voor jou kan werken",
+    "Huidklachten zoals eczeem, acne of psoriasis aanpakken",
+    "Duurzame energie die de hele dag door stabiel blijft",
+    "Hormonen in balans brengen een regelmatige cyclus en een gevoel dat jou écht past",
+    "Je gezondheidsklachten duurzaam oplossen in plaats van blijven proberen"
+  ],
+  "fases": {
+    "fase1": { "titel": "Intake & Meting", "tekst": "TEKST VOLGT" },
+    "fase2": { "titel": "Jouw Protocol", "tekst": "TEKST VOLGT" },
+    "fase3": { "titel": "Herstel & Heling", "tekst": "TEKST VOLGT" },
+    "fase4": { "titel": "Integratie & Onderhoud", "tekst": "TEKST VOLGT" }
+  },
+  "ontvangt": [
+    "Online begeleiding gedurende 4 maanden",
+    "Uitgebreide 1-op-1 intake (3 uur)",
+    "Persoonlijk voedingsplan op maat",
+    "GHO sessies",
+    "WhatsApp support tussendoor",
+    "Toegang tot mijn methode en materialen"
+  ],
+  "investering": {
+    "prijs": "€ XXX",
+    "termijnen": "Of gespreid betalen in termijnen – neem contact op voor de mogelijkheden."
+  },
+  "klaar": [
+    "Je klaar voelt om écht stappen te zetten richting duurzame gezondheid",
+    "Je prioriteit maakt van je gezondheid en bereid bent om te investeren",
+    "Je open staat voor een holistische benadering van je lichaam",
+    "Je wil stoppen met tijdelijke oplossingen en wil begrijpen wat er in je lichaam speelt"
+  ],
+  "cta": {
+    "titel": "Kennismaken?",
+    "tekst": "Wil jij je darmen en energie helemaal opnieuw opbouwen? Stuur een bericht of plan een gratis kennismakingsgesprek.",
+    "email": "info@laurenhendriks.nl"
+  }
+}

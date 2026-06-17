@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -25,9 +26,9 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-inner">
-      <p class="hero-eyebrow">Lauren Hendriks · Darmtherapeut</p>
-      <h1 class="hero-title">Darmtherapie<br />Traject</h1>
-      <p class="hero-sub">In 4 maanden naar gezonde spijsvertering,<br />hormonen en een energiek lichaam</p>
+      <p class="hero-eyebrow" data-cms="hero.eyebrow">Lauren Hendriks · Darmtherapeut</p>
+      <h1 class="hero-title"><span data-cms="hero.titel1">Darmtherapie</span><br /><span data-cms="hero.titel2">Traject</span></h1>
+      <p class="hero-sub" data-cms="hero.subtitel">In 4 maanden naar gezonde spijsvertering, hormonen en een energiek lichaam</p>
       <a href="#kennismaken" class="btn-primary">Plan een kennismakingsgesprek</a>
     </div>
   </section>
@@ -40,9 +41,9 @@
       </div>
       <div class="herkenning-tekst">
         <p class="eyebrow">Herken jij dit?</p>
-        <p class="lead">Je merkt dat je lichaam niet meer meewerkt zoals je wilt.</p>
+        <p class="lead" data-cms="herkenning.lead">Je merkt dat je lichaam niet meer meewerkt zoals je wilt.</p>
         <p class="body-label">Je hebt last van:</p>
-        <ul class="klachten-lijst">
+        <ul class="klachten-lijst" data-cms-list="herkenning.klachten">
           <li>Onregelmatige stoelgang, buikpijn, spijsverteringsproblemen, PDS of voedselintoleranties</li>
           <li>Een vol gevoel na het eten, boeren of winderigheid</li>
           <li>Hormonale disbalans PMS, cyclusproblemen, stemmingswisselingen</li>
@@ -50,7 +51,7 @@
           <li>Huidproblemen die blijven terugkomen</li>
           <li>Cravings, schommelende energie of stress in je lijf</li>
         </ul>
-        <p class="lead-small">Je bent klaar om je klachten om te draaien.</p>
+        <p class="lead-small" data-cms="herkenning.afsluiting">Je bent klaar om je klachten om te draaien.</p>
       </div>
     </div>
   </section>
@@ -58,16 +59,16 @@
   <!-- Eerlijk quote -->
   <section class="quote-light">
     <div class="quote-light-inner">
-      <p class="quote-italic">"Heel eerlijk, het nog even wat langer aankijken of nog meer losse supplementen nemen gaat het verschil niet maken..."</p>
-      <p class="quote-source">You've been there, done that.</p>
-      <p class="body-text">Je hebt al genoeg informatie en therapieoplossingen geprobeerd. Allerlei supplementen uitgeprobeerd. En elke keer lijkt het voor korte tijd te werken maar dan val je weer terug in je patronen en voel je een verlies van vertrouwen in je eigen lichaam.</p>
+      <p class="quote-italic" data-cms="quote_eerlijk.quote">"Heel eerlijk, het nog even wat langer aankijken of nog meer losse supplementen nemen gaat het verschil niet maken..."</p>
+      <p class="quote-source" data-cms="quote_eerlijk.source">You've been there, done that.</p>
+      <p class="body-text" data-cms="quote_eerlijk.tekst">Je hebt al genoeg informatie en therapieoplossingen geprobeerd. Allerlei supplementen uitgeprobeerd. En elke keer lijkt het voor korte tijd te werken maar dan val je weer terug in je patronen en voel je een verlies van vertrouwen in je eigen lichaam.</p>
     </div>
   </section>
 
   <!-- Groen blok -->
   <section class="section-green">
     <div class="section-green-inner">
-      <p class="green-quote">Wat je wel gaat helpen, is je systeem als geheel op een duurzame manier herstellen in plaats van losse klachten oplossen.</p>
+      <p class="green-quote" data-cms="quote_groen">Wat je wel gaat helpen, is je systeem als geheel op een duurzame manier herstellen in plaats van losse klachten oplossen.</p>
     </div>
   </section>
 
@@ -75,7 +76,7 @@
   <section class="quote-centered">
     <div class="quote-centered-inner">
       <blockquote class="quote-block">
-        Je darmen, hormonen en energie<br />werken niet los van elkaar.<br />Dus je oplossing kan dat ook niet doen.
+        <span data-cms="quote_darmen">Je darmen, hormonen en energie werken niet los van elkaar. Dus je oplossing kan dat ook niet doen.</span>
       </blockquote>
     </div>
   </section>
@@ -83,8 +84,8 @@
   <!-- Uitleg + accent -->
   <section class="uitleg-section">
     <div class="uitleg-inner">
-      <p class="body-text">Want als je bijgestoorde systemen hebt, een ongestoorde omgeving wil creëren voor jouw lichaam om te helen, dan moet je de puzzel als geheel oplossen. Niet stukje voor stukje, maar structureel en van binnenuit.</p>
-      <p class="body-text" style="margin-top: 1.25rem;">Zodat je niet langer vastzit in tijdelijkheid, maar eindelijk weet hoe je de regie terugpakt over je eigen lichaam.</p>
+      <p class="body-text" data-cms="uitleg.tekst1">Want als je bijgestoorde systemen hebt, een ongestoorde omgeving wil creëren voor jouw lichaam om te helen, dan moet je de puzzel als geheel oplossen. Niet stukje voor stukje, maar structureel en van binnenuit.</p>
+      <p class="body-text" style="margin-top: 1.25rem;" data-cms="uitleg.tekst2">Zodat je niet langer vastzit in tijdelijkheid, maar eindelijk weet hoe je de regie terugpakt over je eigen lichaam.</p>
     </div>
   </section>
 
@@ -101,7 +102,7 @@
       </div>
       <div class="wilje-tekst">
         <p class="eyebrow">Wil je...</p>
-        <ul class="wilje-lijst">
+        <ul class="wilje-lijst" data-cms-list="wilje">
           <li>Eindelijk afscheid nemen van je buikklachten opgeblazen buik, diarree, verstopping of constipatie</li>
           <li>De onderliggende oorzaak achterhalen en in kaart brengen</li>
           <li>Leren omgaan met je cyclus zodat je lichaam voor jou kan werken</li>
@@ -132,8 +133,8 @@
           />
         </div>
         <p class="fase-nummer">Fase 1</p>
-        <p class="fase-titel">Intake & Meting</p>
-        <p class="fase-tekst">TEKST VOLGT</p>
+        <p class="fase-titel" data-cms="fases.fase1.titel">Intake & Meting</p>
+        <p class="fase-tekst" data-cms="fases.fase1.tekst">TEKST VOLGT</p>
       </div>
 
       <div class="fase-item">
@@ -145,8 +146,8 @@
           />
         </div>
         <p class="fase-nummer">Fase 2</p>
-        <p class="fase-titel">Jouw Protocol</p>
-        <p class="fase-tekst">TEKST VOLGT</p>
+        <p class="fase-titel" data-cms="fases.fase2.titel">Jouw Protocol</p>
+        <p class="fase-tekst" data-cms="fases.fase2.tekst">TEKST VOLGT</p>
       </div>
 
       <div class="fase-item">
@@ -158,8 +159,8 @@
           />
         </div>
         <p class="fase-nummer">Fase 3</p>
-        <p class="fase-titel">Herstel & Heling</p>
-        <p class="fase-tekst">TEKST VOLGT</p>
+        <p class="fase-titel" data-cms="fases.fase3.titel">Herstel & Heling</p>
+        <p class="fase-tekst" data-cms="fases.fase3.tekst">TEKST VOLGT</p>
       </div>
 
       <div class="fase-item">
@@ -171,8 +172,8 @@
           />
         </div>
         <p class="fase-nummer">Fase 4</p>
-        <p class="fase-titel">Integratie & Onderhoud</p>
-        <p class="fase-tekst">TEKST VOLGT</p>
+        <p class="fase-titel" data-cms="fases.fase4.titel">Integratie & Onderhoud</p>
+        <p class="fase-tekst" data-cms="fases.fase4.tekst">TEKST VOLGT</p>
       </div>
 
     </div>
@@ -184,7 +185,7 @@
       <div class="traject-col">
         <p class="eyebrow">Het Darmtherapie Traject</p>
         <h2 class="section-heading">Wat je ontvangt</h2>
-        <ul class="ontvangt-lijst">
+        <ul class="ontvangt-lijst" data-cms-list="ontvangt">
           <li>Online begeleiding gedurende 4 maanden</li>
           <li>Uitgebreide 1-op-1 intake (3 uur)</li>
           <li>Persoonlijk voedingsplan op maat</li>
@@ -195,8 +196,8 @@
       </div>
       <div class="investering-col">
         <p class="eyebrow">Investering</p>
-        <p class="investering-prijs">€ XXX</p>
-        <p class="body-text">Of gespreid betalen in termijnen <br />neem contact op voor de mogelijkheden.</p>
+        <p class="investering-prijs" data-cms="investering.prijs">€ XXX</p>
+        <p class="body-text" data-cms="investering.termijnen">Of gespreid betalen in termijnen – neem contact op voor de mogelijkheden.</p>
         <a href="#kennismaken" class="btn-primary" style="margin-top: 2rem; display: inline-block;">Plan een gesprek</a>
       </div>
     </div>
@@ -206,7 +207,7 @@
   <section class="klaar-section">
     <div class="klaar-inner">
       <p class="eyebrow">Je bent klaar als je...</p>
-      <ul class="klaar-lijst">
+      <ul class="klaar-lijst" data-cms-list="klaar">
         <li>Je klaar voelt om écht stappen te zetten richting duurzame gezondheid</li>
         <li>Je prioriteit maakt van je gezondheid en bereid bent om te investeren</li>
         <li>Je open staat voor een holistische benadering van je lichaam</li>
@@ -218,12 +219,40 @@
   <!-- CTA / Kennismaken -->
   <section id="kennismaken" class="cta-section">
     <div class="cta-inner">
-      <h2 class="cta-title">Kennismaken?</h2>
-      <p class="cta-text">Wil jij je darmen en energie helemaal opnieuw opbouwen?<br />Stuur een bericht of plan een gratis kennismakingsgesprek.</p>
-      <a href="mailto:info@laurenhendriks.nl" class="btn-cta">Stuur een bericht</a>
+      <h2 class="cta-title" data-cms="cta.titel">Kennismaken?</h2>
+      <p class="cta-text" data-cms="cta.tekst">Wil jij je darmen en energie helemaal opnieuw opbouwen? Stuur een bericht of plan een gratis kennismakingsgesprek.</p>
+      <a href="mailto:info@laurenhendriks.nl" class="btn-cta" data-cms="cta.email">Stuur een bericht</a>
     </div>
     <p class="signature">Liefs Lauren</p>
   </section>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+        }
+      });
+    }
+    fetch('content.json').then(r => r.json()).then(data => {
+      // Enkelvoudige tekstvelden
+      document.querySelectorAll('[data-cms]').forEach(el => {
+        const val = el.dataset.cms.split('.').reduce((o, k) => o?.[k], data);
+        if (val != null) el.textContent = val;
+      });
+      // Email href bijwerken
+      const emailEl = document.querySelector('[data-cms="cta.email"]');
+      if (emailEl) emailEl.href = 'mailto:' + data.cta.email;
+      // Lijsten vervangen
+      document.querySelectorAll('[data-cms-list]').forEach(ul => {
+        const key = ul.dataset.cmsList;
+        const items = key.split('.').reduce((o, k) => o?.[k], data);
+        if (Array.isArray(items)) {
+          ul.innerHTML = items.map(t => `<li>${t}</li>`).join('');
+        }
+      });
+    });
+  </script>
 
   <!-- Footer -->
   <footer class="footer">
