@@ -12,10 +12,62 @@ collections:
     label: "Website"
     files:
       - name: "content"
-        label: "Alle teksten"
+        label: "Alle instellingen"
         file: "content.json"
         format: json
         fields:
+
+          - label: "Stijl"
+            name: "stijl"
+            widget: "object"
+            fields:
+              - label: "Kleurthema"
+                name: "kleur_thema"
+                widget: "select"
+                options:
+                  - { label: "Groen (standaard)", value: "groen" }
+                  - { label: "Blauw", value: "blauw" }
+                  - { label: "Terracotta", value: "terracotta" }
+                  - { label: "Lavendel", value: "lavendel" }
+                  - { label: "Zand", value: "zand" }
+              - label: "Lettertype koppen"
+                name: "kop_lettertype"
+                widget: "select"
+                options:
+                  - { label: "Cormorant Garamond – elegant (standaard)", value: "Cormorant Garamond" }
+                  - { label: "Playfair Display – klassiek", value: "Playfair Display" }
+                  - { label: "Lora – warm & leesbaar", value: "Lora" }
+                  - { label: "DM Serif Display – modern", value: "DM Serif Display" }
+              - label: "Lettertype tekst"
+                name: "tekst_lettertype"
+                widget: "select"
+                options:
+                  - { label: "DM Sans – vriendelijk (standaard)", value: "DM Sans" }
+                  - { label: "Inter – strak", value: "Inter" }
+                  - { label: "Nunito – zacht", value: "Nunito" }
+                  - { label: "Source Sans – zakelijk", value: "Source Sans 3" }
+
+          - label: "Secties tonen / verbergen"
+            name: "secties"
+            widget: "object"
+            fields:
+              - { label: "Herken jij dit? (klachten)", name: "over", widget: "boolean", default: true }
+              - { label: "Eerlijke quote sectie", name: "quote-eerlijk", widget: "boolean", default: true }
+              - { label: "Uitleg sectie", name: "uitleg", widget: "boolean", default: true }
+              - { label: "Wil je... sectie", name: "traject", widget: "boolean", default: true }
+              - { label: "4 Fases", name: "fases", widget: "boolean", default: true }
+              - { label: "Traject & investering", name: "investering", widget: "boolean", default: true }
+              - { label: "Je bent klaar als je...", name: "klaar", widget: "boolean", default: true }
+              - { label: "Kennismaken (onderaan)", name: "kennismaken", widget: "boolean", default: true }
+
+          - label: "Afbeeldingen"
+            name: "afbeeldingen"
+            widget: "object"
+            fields:
+              - { label: "Foto bij klachten sectie", name: "herkenning_foto", widget: "image" }
+              - { label: "Foto bij 'Wil je...' sectie", name: "wilje_foto", widget: "image" }
+              - { label: "Foto Fase 1", name: "fase1_foto", widget: "image" }
+
           - label: "Hero (bovenste blok)"
             name: "hero"
             widget: "object"
@@ -45,7 +97,6 @@ collections:
               - { label: "Tekst eronder", name: "tekst", widget: "text" }
 
           - { label: "Groene blok tekst", name: "quote_groen", widget: "text" }
-
           - { label: "Quote (darmen/hormonen)", name: "quote_darmen", widget: "text" }
 
           - label: "Uitleg sectie"

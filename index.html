@@ -37,7 +37,7 @@
   <section id="over" class="herkenning-section">
     <div class="herkenning-grid">
       <div class="herkenning-foto">
-        <img src="Lauren1-12.jpg" alt="Lauren Hendriks" />
+        <img src="Lauren1-12.jpg" alt="Lauren Hendriks" data-cms-img="afbeeldingen.herkenning_foto" />
       </div>
       <div class="herkenning-tekst">
         <p class="eyebrow">Herken jij dit?</p>
@@ -57,7 +57,7 @@
   </section>
 
   <!-- Eerlijk quote -->
-  <section class="quote-light">
+  <section class="quote-light" id="quote-eerlijk">
     <div class="quote-light-inner">
       <p class="quote-italic" data-cms="quote_eerlijk.quote">"Heel eerlijk, het nog even wat langer aankijken of nog meer losse supplementen nemen gaat het verschil niet maken..."</p>
       <p class="quote-source" data-cms="quote_eerlijk.source">You've been there, done that.</p>
@@ -82,7 +82,7 @@
   </section>
 
   <!-- Uitleg + accent -->
-  <section class="uitleg-section">
+  <section class="uitleg-section" id="uitleg">
     <div class="uitleg-inner">
       <p class="body-text" data-cms="uitleg.tekst1">Want als je bijgestoorde systemen hebt, een ongestoorde omgeving wil creëren voor jouw lichaam om te helen, dan moet je de puzzel als geheel oplossen. Niet stukje voor stukje, maar structureel en van binnenuit.</p>
       <p class="body-text" style="margin-top: 1.25rem;" data-cms="uitleg.tekst2">Zodat je niet langer vastzit in tijdelijkheid, maar eindelijk weet hoe je de regie terugpakt over je eigen lichaam.</p>
@@ -98,7 +98,7 @@
   <section id="traject" class="wilje-section">
     <div class="wilje-grid">
       <div class="wilje-foto">
-        <img src="Lauren1-14.jpg" alt="Lauren Hendriks" />
+        <img src="Lauren1-14.jpg" alt="Lauren Hendriks" data-cms-img="afbeeldingen.wilje_foto" />
       </div>
       <div class="wilje-tekst">
         <p class="eyebrow">Wil je...</p>
@@ -116,7 +116,7 @@
   </section>
 
   <!-- 4 Fases -->
-  <section class="fases-section">
+  <section class="fases-section" id="fases">
     <div class="fases-header">
       <p class="eyebrow">Het programma</p>
       <h2 class="section-heading">4 maanden, 4 fases</h2>
@@ -129,6 +129,7 @@
           <img
             src="Lauren1-15.jpg"
             alt="Fase 1 intake"
+            data-cms-img="afbeeldingen.fase1_foto"
             loading="lazy"
           />
         </div>
@@ -204,7 +205,7 @@
   </section>
 
   <!-- Klaar als je -->
-  <section class="klaar-section">
+  <section class="klaar-section" id="klaar">
     <div class="klaar-inner">
       <p class="eyebrow">Je bent klaar als je...</p>
       <ul class="klaar-lijst" data-cms-list="klaar">
@@ -227,6 +228,26 @@
   </section>
 
   <script>
+    const THEMES = {
+      groen:      { '--green': '#6b8f71', '--green-light': '#e8f0e9', '--green-dark': '#4a6b50' },
+      blauw:      { '--green': '#5b8fa8', '--green-light': '#e0ecf4', '--green-dark': '#3a6b85' },
+      terracotta: { '--green': '#a0705a', '--green-light': '#f5ece8', '--green-dark': '#7d5040' },
+      lavendel:   { '--green': '#8070a0', '--green-light': '#ede8f5', '--green-dark': '#5d5080' },
+      zand:       { '--green': '#9a8870', '--green-light': '#f5f0e8', '--green-dark': '#786555' }
+    };
+    const HEADING_FONTS = {
+      'Cormorant Garamond': 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap',
+      'Playfair Display':   'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap',
+      'Lora':               'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap',
+      'DM Serif Display':   'https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'
+    };
+    const BODY_FONTS = {
+      'Inter':         'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap',
+      'DM Sans':       'https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap',
+      'Nunito':        'https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap',
+      'Source Sans 3': 'https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap'
+    };
+
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', user => {
         if (!user) {
@@ -234,23 +255,44 @@
         }
       });
     }
+
     fetch('content.json').then(r => r.json()).then(data => {
-      // Enkelvoudige tekstvelden
+      // Teksten
       document.querySelectorAll('[data-cms]').forEach(el => {
         const val = el.dataset.cms.split('.').reduce((o, k) => o?.[k], data);
         if (val != null) el.textContent = val;
       });
-      // Email href bijwerken
+      // Email href
       const emailEl = document.querySelector('[data-cms="cta.email"]');
       if (emailEl) emailEl.href = 'mailto:' + data.cta.email;
-      // Lijsten vervangen
+      // Lijsten
       document.querySelectorAll('[data-cms-list]').forEach(ul => {
-        const key = ul.dataset.cmsList;
-        const items = key.split('.').reduce((o, k) => o?.[k], data);
-        if (Array.isArray(items)) {
-          ul.innerHTML = items.map(t => `<li>${t}</li>`).join('');
-        }
+        const items = ul.dataset.cmsList.split('.').reduce((o, k) => o?.[k], data);
+        if (Array.isArray(items)) ul.innerHTML = items.map(t => `<li>${t}</li>`).join('');
       });
+      // Afbeeldingen
+      document.querySelectorAll('[data-cms-img]').forEach(img => {
+        const val = img.dataset.cmsImg.split('.').reduce((o, k) => o?.[k], data);
+        if (val) img.src = val;
+      });
+      // Secties tonen / verbergen
+      Object.entries(data.secties || {}).forEach(([id, visible]) => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = visible ? '' : 'none';
+      });
+      // Kleurthema
+      const theme = THEMES[data.stijl?.kleur_thema] || THEMES.groen;
+      Object.entries(theme).forEach(([k, v]) => document.documentElement.style.setProperty(k, v));
+      // Lettertypen laden
+      const hf = data.stijl?.kop_lettertype || 'Cormorant Garamond';
+      const bf = data.stijl?.tekst_lettertype || 'DM Sans';
+      [HEADING_FONTS[hf], BODY_FONTS[bf]].forEach(url => {
+        if (url) { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = url; document.head.appendChild(l); }
+      });
+      // Lettertypen toepassen
+      const s = document.createElement('style');
+      s.textContent = `body,input,textarea,button{font-family:'${bf}',sans-serif!important}.nav-logo,.hero-title,.section-heading,.cta-title,.quote-block,.quote-italic,.green-quote,.fase-titel,h1,h2,h3,blockquote{font-family:'${hf}',serif!important}`;
+      document.head.appendChild(s);
     });
   </script>
 

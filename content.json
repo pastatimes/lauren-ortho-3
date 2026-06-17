@@ -1,4 +1,24 @@
 {
+  "stijl": {
+    "kleur_thema": "groen",
+    "kop_lettertype": "Cormorant Garamond",
+    "tekst_lettertype": "DM Sans"
+  },
+  "secties": {
+    "over": true,
+    "quote-eerlijk": true,
+    "uitleg": true,
+    "traject": true,
+    "fases": true,
+    "investering": true,
+    "klaar": true,
+    "kennismaken": true
+  },
+  "afbeeldingen": {
+    "herkenning_foto": "Lauren1-12.jpg",
+    "wilje_foto": "Lauren1-14.jpg",
+    "fase1_foto": "Lauren1-15.jpg"
+  },
   "hero": {
     "eyebrow": "Lauren Hendriks · Darmtherapeut",
     "titel1": "Darmtherapie",
