@@ -1,25 +1,25 @@
 {
   "investering": {
-    "prijs": "€ XXX",
-    "termijnen": "Of gespreid betalen in termijnen – neem contact op voor de mogelijkheden."
+    "prijs": "Vanaf €900",
+    "termijnen": "Tijdens een kennismaking stemmen we af welke labonderzoeken wel of niet van toepassing zijn op jouw situatie en ontvang je een concrete indicatie."
   },
   "quote_darmen": "Je darmen, hormonen en energie werken niet los van elkaar. Dus je oplossing kan dat ook niet doen.",
   "fases": {
     "fase1": {
-      "titel": "Intake & Meting",
-      "tekst": "TEKST VOLGT"
+      "titel": "Intake & Voorbereiding",
+      "tekst": "We voeren labonderzoek uit en bereiden je lichaam voor door je nieren, lymfe en lever te ondersteunen."
     },
     "fase2": {
-      "titel": "Jouw Protocol",
-      "tekst": "TEKST VOLGT"
+      "titel": "Opruiming en Cleansing",
+      "tekst": "We pakken alle ongewenste indringers zoals bacteriën, schimmels of parasieten aan en ruimen deze op."
     },
     "fase3": {
       "titel": "Herstel & Heling",
-      "tekst": "TEKST VOLGT"
+      "tekst": "We herstellen het darmslijmvlies en versterken het microbioom."
     },
     "fase4": {
       "titel": "Integratie & Onderhoud",
-      "tekst": "TEKST VOLGT"
+      "tekst": "Je leert hoe je met pre- en probiotica je darmflora kunt ondersteunen en hoe je het bereikte resultaat zelf vast kan houden."
     }
   },
   "quote_groen": "Wat je wel gaat helpen, is je systeem als geheel op een duurzame manier herstellen in plaats van losse klachten oplossen.",
@@ -34,11 +34,11 @@
     "tekst": "Je hebt al genoeg informatie en therapieoplossingen geprobeerd. Allerlei supplementen uitgeprobeerd. En elke keer lijkt het voor korte tijd te werken maar dan val je weer terug in je patronen en voel je een verlies van vertrouwen in je eigen lichaam."
   },
   "uitleg": {
-    "tekst1": "Want als je bijgestoorde systemen hebt, een ongestoorde omgeving wil creëren voor jouw lichaam om te helen, dan moet je de puzzel als geheel oplossen. Niet stukje voor stukje, maar structureel en van binnenuit.",
-    "tekst2": "Zodat je niet langer vastzit in tijdelijkheid, maar eindelijk weet hoe je de regie terugpakt over je eigen lichaam."
+    "tekst1": "In het Darm & Energie traject gaan we 4 maanden samen aan de slag om jouw spijsvertering, hormonen en energie weer helemaal in balans te brengen. ",
+    "tekst2": "Zodat jouw gezondheid en energieniveau je weer alle vrijheid geven om jouw mooiste leven te leiden. "
   },
   "cta": {
-    "titel": "Kennismaken?",
+    "titel": "Gratis kennismaken?",
     "tekst": "Wil jij je darmen en energie helemaal opnieuw opbouwen? Stuur een bericht of plan een gratis kennismakingsgesprek.",
     "email": "info@laurenhendriks.nl"
   },
@@ -85,17 +85,17 @@
     "fase1_foto": "Lauren1-15.jpg"
   },
   "hero": {
-    "eyebrow": "Lauren Hendriks · Darmtherapeut",
-    "titel1": "Darmtherapie",
+    "eyebrow": "Lauren Hendriks · Orthomoleculair Therapeut",
+    "titel1": "Darm & Energie",
     "titel2": "Traject",
     "subtitel": "In 4 maanden spijsvertering, hormonen en energie weer in balans."
   },
   "ontvangt": [
     "Online begeleiding gedurende 4 maanden",
-    "Uitgebreide 1-op-1 intake (3 uur)",
-    "Persoonlijk voedingsplan op maat",
-    "GHO sessies",
+    "Uitgebreide 1-op-1 intake (1.5 uur)",
+    "Persoonlijk behandelplan op maat",
+    "3 vervolgsessies; 1 per fase",
     "WhatsApp support tussendoor",
-    "Toegang tot mijn methode en materialen"
+    "Korting op hoogwaardige supplementen"
   ]
 }
